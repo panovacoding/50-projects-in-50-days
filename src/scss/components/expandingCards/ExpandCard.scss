@@ -1,0 +1,61 @@
+.expand-card {
+    cursor: pointer;
+    height: 500px;
+
+    display: flex;
+    align-items: flex-end;
+    color: white;
+
+    border-radius: 60px;
+    position: relative;
+    overflow: hidden;
+
+    transition: all 0.5s ease-in-out;
+    flex: 1;
+
+    @include md-max {
+        border-radius: 40px;
+        height: 50px;
+        flex: auto;
+    }
+
+    &_active {
+        flex:8;
+
+        @include md-max {
+            height: 300px;
+            flex: auto;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    &__title {
+        position: relative;
+        padding: 20px 40px;
+    
+        font-size: 24px;
+        font-weight: 700;
+    
+        opacity: 0;
+        visibility: hidden;
+    
+        min-width: max-content;
+    
+        transition: all 0.3s;
+
+        @include md-max {
+            padding: 20px;
+        }
+    }
+    
+    &_active .expand-card__title {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+

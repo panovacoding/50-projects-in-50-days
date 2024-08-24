@@ -1,0 +1,10 @@
+.page-title {
+	font-family: 'Josefin Sans', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 48px;
+
+    @include md-max {
+        font-size: 32px;
+    }
+}

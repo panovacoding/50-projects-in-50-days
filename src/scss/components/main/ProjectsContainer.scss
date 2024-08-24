@@ -1,0 +1,12 @@
+.projects-container {
+    margin-top: 20px;
+
+    &__row {
+        display: flex;
+        border-bottom: 1px solid gray;
+    }
+
+    &__project {
+        flex: 0 0 33.33%;
+    }
+}

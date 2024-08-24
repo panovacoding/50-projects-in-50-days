@@ -1,0 +1,12 @@
+.project {
+    padding: 15px 10px;
+    transition: color 0.1s;
+
+    &__title {
+        text-align: center;
+    }
+
+    &:hover {
+        color: $accent;
+    }
+}

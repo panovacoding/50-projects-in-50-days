@@ -1,0 +1,26 @@
+@import 'common/mixins';
+@import 'common/screen';
+@import 'common/colors';
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	font-family: 'Montserrat', sans-serif;
+}
+
+main {
+	flex: auto;
+}
+
+.page-title {
+	font-family: 'Josefin Sans', sans-serif;
+}
+

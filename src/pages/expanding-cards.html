@@ -1,0 +1,38 @@
+<section class="expanding-cards">
+	<div class="container">
+		<h1 class="page-title">50 projects in 50 days / Expanding Cards</h1>
+
+		<div class="cards-container">
+			<!-- <div class="cards-container__plate cards-container__plate_active expand-card">1</div>
+			<div class="cards-container__plate expand-card">2</div>
+			<div class="cards-container__plate expand-card">3</div>
+			<div class="cards-container__plate expand-card">4</div>
+			<div class="cards-container__plate expand-card">5</div> -->
+            @@include("../components/ExpandCard.html", {
+                classes: "expand-card_active",
+                img: "img/ExpandingCards/exp-card1.webp",
+                title: "Explore The World"
+            })
+            @@include("../components/ExpandCard.html", {
+                classes: "",
+                img: "img/ExpandingCards/exp-card2.webp",
+                title: "Wild Forest"
+            })
+            @@include("../components/ExpandCard.html", {
+                classes: "",
+                img: "img/ExpandingCards/exp-card3.webp",
+                title: "Sunny Beach"
+            })
+            @@include("../components/ExpandCard.html", {
+                classes: "",
+                img: "img/ExpandingCards/exp-card4.webp",
+                title: "City on Winter"
+            })
+            @@include("../components/ExpandCard.html", {
+                classes: "",
+                img: "img/ExpandingCards/exp-card5.webp",
+                title: "Mountains - Clouds"
+            })
+		</div>
+	</div>
+</section>
