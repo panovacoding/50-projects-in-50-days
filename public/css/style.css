@@ -26,6 +26,14 @@ main {
 .page-title {
   font-family: "Josefin Sans", sans-serif;
 }
+.breadcrumbs__link {
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+.breadcrumbs__link:hover {
+  color: rgb(134, 181, 196);
+}
+
 .page-title {
   font-family: "Josefin Sans", sans-serif;
   margin-top: 50px;
@@ -58,6 +66,11 @@ main {
   -webkit-transition: color 0.1s;
   transition: color 0.1s;
 }
+.project__image {
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .project__title {
   text-align: center;
 }
@@ -71,6 +84,7 @@ main {
   display: flex;
   width: 100%;
   gap: 20px;
+  margin-top: 30px;
 }
 @media (max-width: 767px) {
   .cards-container {
@@ -150,6 +164,89 @@ main {
 .expand-card_active .expand-card__title {
   opacity: 1;
   visibility: visible;
+}
+
+.step {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  border: 2px solid rgb(180, 180, 180);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 1;
+  background: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.step_active {
+  border-color: rgb(110, 175, 232);
+}
+
+.steps-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.steps-container__bar {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: calc(50% - 1px);
+  background: rgb(180, 180, 180);
+}
+.steps-container__progress {
+  width: 0;
+  height: 100%;
+  background: rgb(110, 175, 232);
+  position: absolute;
+  inset: 0;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.step-controller {
+  background: rgb(110, 175, 232);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.step-controller:disabled {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  cursor: not-allowed;
+}
+
+.progress-steps__page-container {
+  max-width: 260px;
+  margin: 120px auto;
+}
+.progress-steps__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  margin-top: 24px;
 }
 
 *, *::before, *::after {

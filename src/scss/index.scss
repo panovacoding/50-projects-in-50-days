@@ -2,12 +2,19 @@
 @import 'common/screen';
 @import 'common/colors';
 
+@import 'components/Breadcrumbs';
+
 @import 'components/main/PageTtitle';
 @import 'components/main/ProjectsContainer';
 @import 'components/main/Project';
 
 @import 'components/expandingCards/CardsContainer';
 @import 'components/expandingCards/ExpandCard';
+
+@import 'components/progressSteps/Step';
+@import 'components/progressSteps/StepsContainer';
+@import 'components/progressSteps/StepController';
+@import '_sections/progressSteps/progressSteps';
 
 *, *::before, *::after {
 	margin: 0;
@@ -54,3 +61,4 @@ main {
         padding-right: 20px;
     }
 }
+

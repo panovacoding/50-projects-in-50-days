@@ -1,0 +1,8 @@
+.breadcrumbs {
+    &__link {
+        transition: all 0.15s;
+        &:hover {
+            color: $accent;
+        }
+    }
+}

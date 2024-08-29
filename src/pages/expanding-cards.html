@@ -2,12 +2,9 @@
 	<div class="container">
 		<h1 class="page-title">50 projects in 50 days / Expanding Cards</h1>
 
+        @@include('../components/Breadcrumbs.html')
+
 		<div class="cards-container">
-			<!-- <div class="cards-container__plate cards-container__plate_active expand-card">1</div>
-			<div class="cards-container__plate expand-card">2</div>
-			<div class="cards-container__plate expand-card">3</div>
-			<div class="cards-container__plate expand-card">4</div>
-			<div class="cards-container__plate expand-card">5</div> -->
             @@include("../components/ExpandCard.html", {
                 classes: "expand-card_active",
                 img: "img/ExpandingCards/exp-card1.webp",

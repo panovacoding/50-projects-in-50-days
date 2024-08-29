@@ -1,0 +1,13 @@
+.step-controller {
+    background: rgb(110, 175, 232);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+
+    &:disabled {
+        filter: grayscale(100%);
+        cursor: not-allowed;
+    }
+}
