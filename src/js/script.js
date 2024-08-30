@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 	expandingCardsInit()
 	progressStepsInit()
+    rotatingNavigation()
 })
 
 const expandingCardsInit = () => {
@@ -21,6 +22,7 @@ const expandingCardsInit = () => {
 
 const progressStepsInit = () => {
     const steps = document.querySelectorAll('.step');
+    if(!steps.length) return;
     const btnNext = document.getElementById("step-next");
     const btnPrev = document.getElementById("step-prev");
     const progressBar = document.querySelector(".steps-container__progress");
@@ -63,4 +65,14 @@ const progressStepsInit = () => {
     
     btnNext.addEventListener("click", btnNextClickHandler);
     btnPrev.addEventListener("click", btnPrevClickHandler);
+}
+
+const rotatingNavigation = () => {
+    const navButton = document.querySelector('.rotating-nav-button');
+    const section = document.querySelector('.rotating-navigation');
+    navButton.addEventListener('click', () => {
+        navButton.classList.toggle('rotating-nav-button_rotate');
+        section.classList.toggle('rotating-navigation_open');
+    })
+
 }

@@ -1,0 +1,13 @@
+.rotating-navigation {
+    background: rgb(253, 249, 249);
+    overflow: hidden;
+    transition: all 0.3s;
+    transform-origin: 0 0;
+
+    position: relative;
+    z-index: 1;
+
+    &_open {
+        rotate: -20deg;
+    }
+}

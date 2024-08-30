@@ -1,0 +1,54 @@
+.rotating-nav-button {
+    position: fixed;
+    top: 0;
+    left: 0;
+    translate: -50% -50%;
+    width: 200px;
+    height: 200px;
+    background: red;
+    color: white;
+    border-radius: 100%;
+    overflow: hidden;
+    z-index: 99;
+
+    cursor: pointer;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    transition: all 0.5s;
+
+    &__icon {
+        font-size: 20px;
+
+        padding-left: calc(40% - 15px);
+        padding-top: calc(50% - 15px);
+
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // translate: calc(50% - 15px) 0;
+
+
+        &_open {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+
+        &_close {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            transition: all 0.3s;
+        }
+
+    }
+
+    &_rotate {
+        rotate: -90deg;
+
+        & .rotating-nav-button__icon_close {
+            rotate: 90deg;
+        }
+    }
+}

@@ -16,6 +16,11 @@
 @import 'components/progressSteps/StepController';
 @import '_sections/progressSteps/progressSteps';
 
+@import '_sections/rotatingNavigation/rotatingNavigation';
+@import 'components/rotatingNavigation/Article';
+@import 'components/rotatingNavigation/RotatingNavButton';
+@import 'components/rotatingNavigation/FixedNav';
+
 *, *::before, *::after {
 	margin: 0;
 	padding: 0;
@@ -28,6 +33,14 @@ body {
 	min-height: 100vh;
 
 	font-family: 'Montserrat', sans-serif;
+}
+
+body.overflow-hidden {
+    overflow-x: hidden;
+}
+
+body.bg-dark {
+    background: rgb(56, 56, 56);
 }
 
 a {
