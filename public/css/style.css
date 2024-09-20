@@ -300,7 +300,7 @@ main {
   translate: -50% -50%;
   width: 200px;
   height: 200px;
-  background: red;
+  background: #ff7979;
   color: white;
   border-radius: 100%;
   overflow: hidden;
@@ -348,6 +348,9 @@ main {
           flex-direction: column;
   gap: 15px;
   padding: 20px 10px;
+  translate: -100% 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 .fixed-nav__link {
   color: #ffffff;
@@ -359,11 +362,16 @@ main {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
-.fixed-nav__link:nth-child(2) {
+.fixed-nav.open {
+  translate: 0 0;
+}
+.fixed-nav.open .fixed-nav__link:nth-child(2) {
   padding-left: 20px;
 }
-.fixed-nav__link:nth-child(3) {
+.fixed-nav.open .fixed-nav__link:nth-child(3) {
   padding-left: 40px;
 }
 

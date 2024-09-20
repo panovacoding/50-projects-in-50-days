@@ -5,7 +5,7 @@
     translate: -50% -50%;
     width: 200px;
     height: 200px;
-    background: red;
+    background: #ff7979;
     color: white;
     border-radius: 100%;
     overflow: hidden;
@@ -24,12 +24,6 @@
 
         padding-left: calc(40% - 15px);
         padding-top: calc(50% - 15px);
-
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
-        // translate: calc(50% - 15px) 0;
-
 
         &_open {
             grid-column: 2 / 3;

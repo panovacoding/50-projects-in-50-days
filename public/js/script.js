@@ -69,10 +69,13 @@ const progressStepsInit = () => {
 
 const rotatingNavigation = () => {
     const navButton = document.querySelector('.rotating-nav-button');
+    if(!navButton) return;
     const section = document.querySelector('.rotating-navigation');
+    const fixedNav = document.querySelector('.fixed-nav');
     navButton.addEventListener('click', () => {
         navButton.classList.toggle('rotating-nav-button_rotate');
         section.classList.toggle('rotating-navigation_open');
+        fixedNav.classList.toggle('open');
     })
 
 }
